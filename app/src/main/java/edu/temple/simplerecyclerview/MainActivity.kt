@@ -12,12 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Step 1: Reference RecyclerView object
         recyclerView = findViewById(R.id.recyclerView)
 
-        //Step 2: Provide a LayoutManager
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        //Step 4: Provide a RecyclerView.Adapter
+        recyclerView.adapter = NumberDisplayAdapter()
     }
 }
